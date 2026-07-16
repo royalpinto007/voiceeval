@@ -9,6 +9,11 @@ dependencies = ["rich>=13.0"]
 stt = ["groq>=0.11"]
 dev = ["pytest>=8.3", "ruff>=0.7"]
 
+# fixtures/ is sample data, not a package. Without this, flat-layout autodiscovery finds both it
+# and voiceeval/ and refuses to build.
+[tool.setuptools]
+packages = ["voiceeval"]
+
 [project.scripts]
 voiceeval = "voiceeval.cli:main"
 

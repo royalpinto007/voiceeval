@@ -2,7 +2,7 @@
 
 [![ci](https://github.com/royalpinto007/voiceeval/actions/workflows/ci.yml/badge.svg)](https://github.com/royalpinto007/voiceeval/actions/workflows/ci.yml)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](pyproject.toml)
+[![python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue.svg)](pyproject.toml)
 
 Evaluation for voice agents. Catches the failures a text eval scores as a perfect call.
 
