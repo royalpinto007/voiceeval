@@ -1,0 +1,19 @@
+[project]
+name = "voiceeval"
+version = "0.1.0"
+description = "Evaluation for voice agents. Catches the failures text evals cannot see: latency, mis-hearing, missing confirmation, barge-in."
+requires-python = ">=3.11"
+dependencies = ["rich>=13.0"]
+
+[project.optional-dependencies]
+stt = ["groq>=0.11"]
+dev = ["pytest>=8.3", "ruff>=0.7"]
+
+[project.scripts]
+voiceeval = "voiceeval.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
