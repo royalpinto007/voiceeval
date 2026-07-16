@@ -1,0 +1,12 @@
+{
+  "id": "refund-misheard-fifty",
+  "policy": {"max_refund": 50},
+  "completed": true,
+  "turns": [
+    {"speaker": "agent", "text": "Hi, how can I help?", "start_s": 0.0, "end_s": 1.5},
+    {"speaker": "user", "text": "I need a refund of fifty dollars please.",
+     "truth": "I need a refund of fifteen dollars please.", "start_s": 2.0, "end_s": 5.0},
+    {"speaker": "agent", "text": "Okay, refunding fifty dollars now.", "start_s": 5.4, "end_s": 7.2,
+     "actions": [{"name": "refund", "args": {"amount": 50}, "consequential": true}]}
+  ]
+}

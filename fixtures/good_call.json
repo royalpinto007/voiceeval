@@ -1,0 +1,14 @@
+{
+  "id": "refund-happy-path",
+  "policy": {"max_refund": 50},
+  "completed": true,
+  "turns": [
+    {"speaker": "agent", "text": "Hi, thanks for calling. How can I help?", "start_s": 0.0, "end_s": 2.1},
+    {"speaker": "user", "text": "I want a refund for fifteen dollars, the item was damaged.",
+     "truth": "I want a refund for fifteen dollars, the item was damaged.", "start_s": 2.6, "end_s": 6.0},
+    {"speaker": "agent", "text": "Sorry about that. Just to confirm, a fifteen dollar refund for the damaged item, is that right?", "start_s": 6.7, "end_s": 10.2},
+    {"speaker": "user", "text": "Yes that's right.", "truth": "Yes that's right.", "start_s": 10.8, "end_s": 11.9},
+    {"speaker": "agent", "text": "Done, fifteen dollars is on its way back.", "start_s": 12.5, "end_s": 14.6,
+     "actions": [{"name": "refund", "args": {"amount": 15}, "consequential": true}]}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "slow-and-overlapping",
+  "policy": {"max_refund": 50},
+  "completed": false,
+  "turns": [
+    {"speaker": "agent", "text": "Hello, thanks for calling, how may I direct your call today?", "start_s": 0.0, "end_s": 4.0},
+    {"speaker": "user", "text": "Hi I need help", "truth": "Hi I need help", "start_s": 2.5, "end_s": 4.5},
+    {"speaker": "agent", "text": "Let me look that up for you.", "start_s": 9.0, "end_s": 10.5},
+    {"speaker": "user", "text": "Are you still there?", "truth": "Are you still there?", "start_s": 15.0, "end_s": 16.2}
+  ]
+}
