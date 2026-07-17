@@ -6,6 +6,12 @@
 
 Evaluation for voice agents. Catches the failures a text eval scores as a perfect call.
 
+## Demo
+
+[![voiceeval demo](assets/demo-thumb.png)](assets/demo.mp4)
+
+▶ [Watch the demo](assets/demo.mp4)
+
 ```
 $ voiceeval check fixtures/misheard_call.json
 
